@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/cars-r-us-startcode/.idea/CarsRUsNY.iml" filepath="$PROJECT_DIR$/cars-r-us-startcode/.idea/CarsRUsNY.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cars-r-us-startcode/security.iml" filepath="$PROJECT_DIR$/cars-r-us-startcode/security.iml" />
     </modules>
   </component>
 </project>
