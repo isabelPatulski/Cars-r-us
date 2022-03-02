@@ -3,7 +3,7 @@ package kea.sem3.jwtdemo.configuration;
 import kea.sem3.jwtdemo.entity.*;
 import kea.sem3.jwtdemo.repositories.CarRepository;
 import kea.sem3.jwtdemo.repositories.MemberRepository;
-import kea.sem3.jwtdemo.repositories.ReservationRepository;
+//import kea.sem3.jwtdemo.repositories.ReservationRepository;
 import kea.sem3.jwtdemo.security.UserRepository;
 import org.apache.catalina.Store;
 import org.springframework.boot.ApplicationArguments;
@@ -72,18 +72,19 @@ public class MakeTestData implements ApplicationRunner {
         carRepository.save(new Car("Suzuki", "S-Cross", 500,14));
 
 //Create a Reservation
-        Reservation res1 = new Reservation(LocalDate.of(2022,3,1),carVolvo,m1);
+        /*Reservation res1 = new Reservation(LocalDate.of(2022,3,1),carVolvo,m1);
         reservationRepository.save(res1);
         Reservation res = reservationRepository.
                 findReservationByReservedCar_IdAndRentalDate(carVolvo.getId(),(LocalDate.of(2022,3,1)));
         if(res == null) {
 
             Reservation res2 = new Reservation(LocalDate.of(2022, 3, 1), carVolvo, m2);
-            reservationRepository.save(res2);
+            //reservationRepository.save(res2);
         } else{
             System.out.println("Car is reserved this day");
+ret
         }
-
+*/
 
     }
 
@@ -94,8 +95,6 @@ public class MakeTestData implements ApplicationRunner {
 
             Car c2 = new Car("kurt", "alice", 09.00, 18.00);
             carRepository.save(c2);
-        }
-        else
 
     }
 
