@@ -6,14 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="CarsRUsNY" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="CarsRUsNY" target="11" />
       <module name="security" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CarsRUsNY" options="-parameters" />
       <module name="security" options="-parameters" />
     </option>
   </component>
