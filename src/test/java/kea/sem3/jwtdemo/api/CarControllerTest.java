@@ -12,6 +12,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -28,10 +29,11 @@ import static org.hamcrest.Matchers.*;
 Når Lars siger byggeservere, referr han til githubAction
 Denne annotation kører alle annotationer*/
 @SpringBootTest
+//@ContextConfiguration(classes = SecurityConfig.class)
 
 @AutoConfigureMockMvc
-/*referer til @Profile("!test") (som ligger i MakeTestData), som altså fortæller at vi ønkser at få
-data fra denne klass med ober i denne test */
+/*referer til @Profile("!test") (som ligger i MakeTestData), som altså fortæller at vi ønsker at få
+data fra denne klasse med over i denne test */
 @ActiveProfiles("test")
 class CarControllerTest {
 
