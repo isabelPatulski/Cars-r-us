@@ -1,11 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap files-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="styles/menu-vertical.css" /> -->
+    <link rel="stylesheet" href="styles/menu-horizontal.css" />
+    <!-- <link rel="stylesheet" href="styles/style.css" /> -->
+    <title>Document</title>
+    <script type="module" src="index.js"></script>
 </head>
-<body style="font-family: sans-serif">
-<h1>Demo Fullstack Project</h1>
-<h3>Cars 'R' Us'</h3>
+
+<body style="font-family: sans-serif;padding-top: 1em;">
+<div style="margin-left: 50px;margin-right: auto;width: 80%;" class="vertical-menu">
+    <div>
+        <ul id="menu" class="menu">
+            <li><a id="page-about" href="#">About</a></li>
+            <li><a id="page-see-cars" href="#">See our cars</a></li>
+            <li><a id="page-add-cars" href="#">Add/edit cars</a></li>
+            <li><a id="page-sign-up" href="#">Sign up as user</a></li>
+            <li><a id="page-my-details" href="#">My Details</a></li>
+            <li><a id="page-login" href="#">Login</a></li>
+        </ul>
+    </div>
+    <div id="content" style="margin-left:15px;padding-top: 1em;"></div>
+</div>
 </body>
+
 </html>
+
+<!--
+  All you templates should be added below
+-->
+
+<template data-id="page-about">
+    <h2>About Cars 'R' Us </h2>
+    <img src="images/logo.PNG" alt="cars logo" />
+</template>
+<template data-id="page-see-cars">
+    <h2>See our cars </h2>
+</template>
+<template data-id="page-add-cars">
+    <h2>Add/Edit Cars </h2>
+    <h3>ONLY FOR ADMINS</h3>
+</template>
+<template data-id="page-sign-up">
+    <h2>Sign up as user with Car's 'R' Us</h2>
+    <p>Here you should be abble to signup as a new user</p>
+</template>
+<template data-id="page-my-details">
+    <h2>My Details</h2>
+    <p>Here you should see name, address etc. for the loged in member</p>
+</template>
+<template data-id="page-login">
+    <h2>Login</h2>
+</template>
+
